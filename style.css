@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+html,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--body-bg);
+    font-family: var(--font-family);
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+}
+
+:root{
+    --font-family:'karla', sans-serif;
+    --body-bg: #1E1F25;
+    --btn-bg: #000;
+    --btn-color: #cbcbcb;
+    --btn-color-hover: #ffff;
+    --grad-color1: #eeaf61;
+    --grad-color2: #fb9862;
+    --grad-color3: #ee5d6c;
+    --grad-color4: #ce4993;
+    --grad-color5: #6a8d83;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.button-border{
+    background: linear-gradient(115deg, #eeaf61, #fb9862, #ee5d6c, #ce4993, #6a8d83);
+    padding: 2px;
+}
+
+.button{
+    border: none;
+    background: var(--btn-bg);
+    color: var(--btn-color);
+    padding: 1em 1.5em;
+    font-family: inherit;
+    letter-spacing: .1em;
+    background: transparent;
+   /* border-image: linear-gradient(115deg, #eeaf61, #fb9862, #ee5d6c, #ce4993, #6a8d83);
+    border-image-slice: 1 ;*/
+}
+
+.button-border:hover{
+    background: linear-gradient(115deg, #eeaf61, #fb9862, #ee5d6c, #ce4993, #6a8d83);
+}
+
+.button-border:hover .button{
+    color: var(--btn-color-hover);
+    padding: 1.1em 1.6em;
+}
